@@ -9,6 +9,12 @@
       - Dialect.all.each do |dialect|
         = f.radio_button :dialect, dialect[:id]
         = label_tag :dialect, dialect[:name], :for => "word_dialect_" + dialect[:id].to_s
+    #form_field_2
+      %h3 Hand
+      = radio_button_tag :hand, 1
+      = label_tag :hand, "One", :for => "hand_1"
+      = radio_button_tag :hand, 2
+      = label_tag :hand, "Two", :for => "hand_2"
     #form_field_3
       %h3 Finger
       = radio_button_tag :finger, 1
@@ -27,12 +33,6 @@
             #selection
               = f.radio_button :shape, shape[:id]
               = label_tag nil, image_tag(shape[:url]), :for => "word_shape_" + shape[:id].to_s
-    #form_field_2
-      %h3 Hand
-      = radio_button_tag :hand, 1
-      = label_tag :hand, "One", :for => "hand_1"
-      = radio_button_tag :hand, 2
-      = label_tag :hand, "Two", :for => "hand_2"
     #form_field_5
       %h3 Orientation
       - Orientation.all.each do |orientation|
@@ -59,4 +59,7 @@
             #selection
               = f.radio_button :movement, movement[:id]
               = label_tag nil, image_tag(movement[:url]), :for => "word_movement_" + movement[:id].to_s
+    #form_field_8
+      %h3 Memo
+      = f.text_field :memo
     = f.submit "Submit"

@@ -1,16 +1,15 @@
-#include
-  #main{:style => "background-image:url(images/); background-repeat:no-repeat"}
-    #content{:style => "height:"}
-      %h1 Search for a word
-      %form{:action => "http://www.yahantsui.com/SLCP/search.php", :method => "post"}
+#main{:style => "background-image:url(images/); background-repeat:no-repeat"}
+  #content{:style => "height:"}
+    %h1 Search for a word
+    %form{:action => "http://www.yahantsui.com/SLCP/search.php", :method => "post"}
+      %p
+        %b Word:
+        %input{:name => "word", :size => "30", :type => "text", :value => ""}
+      %p
+        dialect:
+        %select{:name => "language"}
+          %option{:value => "East Coast"} East Coast
+          %option{:value => "Southern"} Southern
+      %input{:name => "formSubmitted", :type => "hidden", :value => "true"}
         %p
-          %b Word:
-          %input{:name => "word", :size => "30", :type => "text", :value => ""}
-        %p
-          dialect:
-          %select{:name => "language"}
-            %option{:value => "East Coast"} East Coast
-            %option{:value => "Southern"} Southern
-        %input{:name => "formSubmitted", :type => "hidden", :value => "true"}
-          %p
-            %input.searchBtn{:type => "submit", :value => "Submit"}
+          %input.searchBtn{:type => "submit", :value => "Submit"}
