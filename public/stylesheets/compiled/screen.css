@@ -96,38 +96,52 @@ body {
 }
 
 /* line 40, ../../../app/stylesheets/screen.scss */
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+/* line 45, ../../../app/stylesheets/screen.scss */
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0px;
+}
+
+/* line 52, ../../../app/stylesheets/screen.scss */
 h2 {
   font-size: 2em;
   line-height: 2.4;
   font-weight: bold;
 }
 
-/* line 46, ../../../app/stylesheets/screen.scss */
+/* line 58, ../../../app/stylesheets/screen.scss */
 h3 {
   font-size: 1em;
   line-height: 2.4;
   font-weight: bold;
 }
 
-/* line 52, ../../../app/stylesheets/screen.scss */
+/* line 64, ../../../app/stylesheets/screen.scss */
 #new_submit {
   margin: 8px;
   padding: 8px 0px 8px 0px;
   width: 100%;
 }
 
-/* line 58, ../../../app/stylesheets/screen.scss */
+/* line 70, ../../../app/stylesheets/screen.scss */
 #word_submit {
   margin: 20px 0px;
   font-size: 1em;
 }
 
-/* line 63, ../../../app/stylesheets/screen.scss */
+/* line 75, ../../../app/stylesheets/screen.scss */
 #word_word {
   # background-color: #D5E9F6;
 }
 
-/* line 67, ../../../app/stylesheets/screen.scss */
+/* line 79, ../../../app/stylesheets/screen.scss */
 #form_field, #static_form_field, #form_field_0, #form_field_1, #form_field_4, #form_field_5, #form_field_7, #dynamic_form_field, #form_field_2, #form_field_3, #form_field_6 {
   border-style: solid;
   border-width: 1px;
@@ -136,19 +150,19 @@ h3 {
   # opacity: 0.9;
 }
 
-/* line 75, ../../../app/stylesheets/screen.scss */
+/* line 87, ../../../app/stylesheets/screen.scss */
 #static_form_field, #form_field_0, #form_field_1, #form_field_4, #form_field_5, #form_field_7 {
   background: #E0E0E0;
   border-color: #777;
 }
 
-/* line 81, ../../../app/stylesheets/screen.scss */
+/* line 93, ../../../app/stylesheets/screen.scss */
 #dynamic_form_field, #form_field_2, #form_field_3, #form_field_6 {
   background: #FEF;
   border-color: #CE4DD6;
 }
 
-/* line 119, ../../../app/stylesheets/screen.scss */
+/* line 131, ../../../app/stylesheets/screen.scss */
 #selection {
   display: inline-block;
   vertical-align: bottom;

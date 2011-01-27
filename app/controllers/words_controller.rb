@@ -11,7 +11,5 @@ class WordsController < ApplicationController
   def create
     puts "PARAMS: #{params.inspect}"
   end
-  
-  def show
-  end
+
 end

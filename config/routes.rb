@@ -65,4 +65,5 @@ Yahan::Application.routes.draw do
   match "/map" => "home#map"
   match "/agenda" => "home#agenda"
   match "/contact" => "home#contact"
+  match "/search" => "home#search"
 end
