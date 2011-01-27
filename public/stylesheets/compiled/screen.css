@@ -1,0 +1,155 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../../../.rvm/gems/ree-1.8.7-2010.02@yahan/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../.rvm/gems/ree-1.8.7-2010.02@yahan/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../.rvm/gems/ree-1.8.7-2010.02@yahan/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../.rvm/gems/ree-1.8.7-2010.02@yahan/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../.rvm/gems/ree-1.8.7-2010.02@yahan/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../.rvm/gems/ree-1.8.7-2010.02@yahan/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../.rvm/gems/ree-1.8.7-2010.02@yahan/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../.rvm/gems/ree-1.8.7-2010.02@yahan/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 8, ../../../app/stylesheets/screen.scss */
+#tabs_wrap {
+  padding: 10px 0px 10px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* line 15, ../../../app/stylesheets/screen.scss */
+#tabs_wrap li {
+  display: table-cell;
+  padding: 0px 5px;
+  width: 120px;
+  text-align: center;
+  font-size: 1em;
+}
+
+/* line 26, ../../../app/stylesheets/screen.scss */
+#tabs {
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 32, ../../../app/stylesheets/screen.scss */
+body {
+  background-image: url("/images/background.jpg");
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+/* line 40, ../../../app/stylesheets/screen.scss */
+h2 {
+  font-size: 2em;
+  line-height: 2.4;
+  font-weight: bold;
+}
+
+/* line 46, ../../../app/stylesheets/screen.scss */
+h3 {
+  font-size: 1em;
+  line-height: 2.4;
+  font-weight: bold;
+}
+
+/* line 52, ../../../app/stylesheets/screen.scss */
+#new_submit {
+  margin: 8px;
+  padding: 8px 0px 8px 0px;
+  width: 100%;
+}
+
+/* line 58, ../../../app/stylesheets/screen.scss */
+#word_submit {
+  margin: 20px 0px;
+  font-size: 1em;
+}
+
+/* line 63, ../../../app/stylesheets/screen.scss */
+#word_word {
+  # background-color: #D5E9F6;
+}
+
+/* line 67, ../../../app/stylesheets/screen.scss */
+#form_field, #static_form_field, #form_field_0, #form_field_1, #form_field_4, #form_field_5, #form_field_7, #dynamic_form_field, #form_field_2, #form_field_3, #form_field_6 {
+  border-style: solid;
+  border-width: 1px;
+  margin: 8px;
+  padding: 10px;
+  # opacity: 0.9;
+}
+
+/* line 75, ../../../app/stylesheets/screen.scss */
+#static_form_field, #form_field_0, #form_field_1, #form_field_4, #form_field_5, #form_field_7 {
+  background: #E0E0E0;
+  border-color: #777;
+}
+
+/* line 81, ../../../app/stylesheets/screen.scss */
+#dynamic_form_field, #form_field_2, #form_field_3, #form_field_6 {
+  background: #FEF;
+  border-color: #CE4DD6;
+}
+
+/* line 119, ../../../app/stylesheets/screen.scss */
+#selection {
+  display: inline-block;
+  vertical-align: bottom;
+}

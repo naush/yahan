@@ -1,0 +1,11 @@
+Word
+word string
+dialect string
+shape_id integer
+orientation_id integer
+position_id integer
+movement_id integer
+
+Movement
+string :url
+integer :position_id
