@@ -59,4 +59,10 @@ Yahan::Application.routes.draw do
   # This is a legacy wild controller route that"s not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ":controller(/:action(/:id(.:format)))"
+  match "/resources" => "home#resources"
+  match "/about" => "home#about"
+  match "/team" => "home#team"
+  match "/map" => "home#map"
+  match "/agenda" => "home#agenda"
+  match "/contact" => "home#contact"
 end

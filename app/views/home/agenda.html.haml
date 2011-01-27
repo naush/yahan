@@ -1,0 +1,13 @@
+#include
+  #main{:style => "background-image:url(images/about.png); background-repeat:no-repeat; height:450"}
+    #content{:style => "height:400px"}
+      = render :partial => "about_menu"
+      %link{:href => "http://www.yahantsui.com/css/lightbox.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+      %script{:src => "http://www.yahantsui.com/js/prototype.js", :type => "text/javascript"}
+      %script{:src => "http://www.yahantsui.com/js/scriptaculous.js?load=effects,builder", :type => "text/javascript"}
+      %script{:src => "http://www.yahantsui.com/js/lightbox.js", :type => "text/javascript"}
+      #a_right
+        %p
+          %a{:href => "http://www.yahantsui.com/SLCP/images/agenda.jpg", :rel => "lightbox[comic]", :title => "Winter-Spring Agenda "}
+            %img{:alt => "", :src => "http://www.yahantsui.com/SLCP/images/agenda.jpg", :width => "300"}
+        %iframe{:frameborder => "0", :height => "500", :scrolling => "no", :src => "https://www.google.com/calendar/embed?showTitle=0&showNav=0&showPrint=0&showTabs=0&height=600&wkst=1&bgcolor=%23FFFFFF&src=soj8v3k4eelc65h3nq1iu4m928%40group.calendar.google.com&color=%2342104A&src=7ue30min1ltspd0v1l6j58npm0%40group.calendar.google.com&color=%23182C57&src=a820qqc25as914vl094ph0c088%40group.calendar.google.com&color=%238C500B&src=7fguasjddbhsbjm54s57is6f9s%40group.calendar.google.com&color=%23691426&src=q4v0rdplokfiv2c0g7nnh27ngc%40group.calendar.google.com&color=%23125A12&src=feel9l96vcr5cbtnmnq94gb32s%40group.calendar.google.com&color=%23856508&src=yahantsui%40gmail.com&color=%235229A3&ctz=America%2FNew_York", :style => " border-width:0 ", :width => "600"}

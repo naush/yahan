@@ -1,0 +1,42 @@
+#include
+  #main{:style => "background-image:url(images/about.png); background-repeat:no-repeat; height:550"}
+    #content{:style => "height:500px"}
+      = render :partial => "about_menu"
+      #a_right
+        Hi everyone,
+        %br
+        %br
+        feel free to contact me if you have any question, comments or concerns. :-)
+        %br
+        %br
+        %br
+        %form{:action => "/SLCP/contact.php", :method => "post", :name => "contactform"}
+          %table{:width => "450px"}
+            %tr
+              %td{:valign => "top"}
+                %label{:for => "first_name"} First Name *
+              %td{:valign => "top"}
+                %input{:maxlength => "50", :name => "first_name", :size => "30", :type => "text"}
+            %tr
+              <td valign="top"">
+              %label{:for => "last_name"} Last Name *
+              %td{:valign => "top"}
+                %input{:maxlength => "50", :name => "last_name", :size => "30", :type => "text"}
+            %tr
+              %td{:valign => "top"}
+                %label{:for => "email"} Email Address *
+              %td{:valign => "top"}
+                %input{:maxlength => "80", :name => "email", :size => "30", :type => "text"}
+            %tr
+              %td{:valign => "top"}
+                %label{:for => "telephone"} Telephone Number
+              %td{:valign => "top"}
+                %input{:maxlength => "30", :name => "telephone", :size => "30", :type => "text"}
+            %tr
+              %td{:valign => "top"}
+                %label{:for => "comments"} Comments *
+              %td{:valign => "top"}
+                %textarea{:cols => "25", :maxlength => "1000", :name => "comments", :rows => "6"}
+            %tr
+              %td{:colspan => "2", :style => "text-align:center"}
+                %input{:type => "submit", :value => "Submit"}

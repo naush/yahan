@@ -9,7 +9,21 @@
     /[if IE]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
     = csrf_meta_tag
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %title Sign Language Communication Project
+    %link{:href => "http://www.yahantsui.com/SLCP/SLCP2010.css", :rel => "stylesheet", :type => "text/css"}/
   %body
-    #tabs_wrap
-      = render 'layouts/tabs'
-    = yield
+    #main
+      #header
+        %img{:border => "0", :src => "http://www.yahantsui.com/SLCP/images/header.png", :usemap => "#Map"}
+        %map#Map{:name => "Map"}
+          %area{:coords => "11,12,292,159", :href => "/", :shape => "rect"}
+          %area{:coords => "296,63,436,130", :href => "/words/new", :shape => "rect"}
+          %area{:coords => "452,119,548,169", :href => "/words/search", :shape => "rect"}
+          %area{:coords => "575,84,706,131", :href => "/resources", :shape => "rect"}
+          %area{:coords => "699,133,800,169", :href => "/about", :shape => "rect"}
+      #topbar
+      / #tabs_wrap
+      /   = render 'layouts/tabs'
+      = yield
+      %img{:src => "http://www.yahantsui.com/SLCP/images/footer.jpg"}
