@@ -10,46 +10,57 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110127042647) do
+ActiveRecord::Schema.define(:version => 20110127214525) do
 
   create_table "dialects", :force => true do |t|
     t.string   "name"
+    t.integer  "word_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "handshapes", :force => true do |t|
+    t.string   "finger"
+    t.string   "url"
+    t.integer  "sign_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "movements", :force => true do |t|
     t.string   "url"
+    t.integer  "position_id"
+    t.integer  "sign_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "position_id"
   end
 
   create_table "orientations", :force => true do |t|
     t.string   "url"
+    t.integer  "sign_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "positions", :force => true do |t|
-    t.integer  "hand"
+    t.string   "hand"
     t.string   "url"
+    t.integer  "sign_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "shapes", :force => true do |t|
-    t.integer  "finger"
-    t.string   "url"
+  create_table "signs", :force => true do |t|
+    t.integer  "order"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "words", :force => true do |t|
-    t.string   "word"
+    t.string   "text"
+    t.text     "memo"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "memo"
   end
 
 end

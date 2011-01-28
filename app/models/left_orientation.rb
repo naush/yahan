@@ -1,0 +1,2 @@
+class RightOrientation < Orientation
+end

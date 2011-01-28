@@ -3,7 +3,8 @@ class WordsController < ApplicationController
 
   def new
     @word = Word.new
-    @shapes = Shape.all
+    @handshapes = Handshape.all
+    @orientations = Orientation.all
     @positions = Position.all
     @movements = Movement.all
   end

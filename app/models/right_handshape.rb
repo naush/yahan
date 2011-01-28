@@ -1,0 +1,2 @@
+class RightHandshape < Handshape
+end

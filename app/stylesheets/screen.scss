@@ -81,6 +81,7 @@ h3 {
   border-width: 1px;
   margin: 8px;
   padding: 10px;
+  overflow:auto;
   # opacity: 0.9;
 }
 
@@ -135,4 +136,34 @@ h3 {
 #selection {
   display: inline-block;
   vertical-align: bottom;
+}
+
+#left_handshape {
+  width: 50%;
+  float: left;
+}
+
+#right_handshape {
+  width: 50%;
+  float: left;
+}
+
+#left_orientation {
+  width: 50%;
+  float: left;
+}
+
+#right_orientation {
+  width: 50%;
+  float: left;
+}
+
+#left_fingers {
+  width: 50%;
+  float: left;
+}
+
+#right_fingers {
+  width: 50%;
+  float: left;
 }

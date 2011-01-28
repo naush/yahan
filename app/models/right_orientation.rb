@@ -1,0 +1,2 @@
+class LeftOrientation < Orientation
+end

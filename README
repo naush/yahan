@@ -1,11 +1,17 @@
-Word
-word string
-dialect string
-shape_id integer
-orientation_id integer
-position_id integer
-movement_id integer
+class Position < ActiveRecord::Base
+  has_many :movements, :autosave => true
+  
+  def self.one_hand
+    all.select{|position| position.hand == 1}
+  end
 
-Movement
-string :url
-integer :position_id
+  def self.two_hands
+    all.select{|position| position.hand == 2}
+  end
+end
+
+class Word < ActiveRecord::Base
+  belongs_to :dialect
+  belongs_to :memo
+  belongs_to :movements
+end

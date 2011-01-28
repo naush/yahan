@@ -1,9 +1,9 @@
-function refreshShapeSelections() {
+function refreshhandshapeSelections() {
 	$('#form_field_4').hide();
-	$('#hand_shape_1').show();
-	$('#hand_shape_2').hide();
-	$('#hand_shape_3').hide();
-	$('#hand_shape_4').hide();
+	$('#handshape_1').show();
+	$('#handshape_2').hide();
+	$('#handshape_3').hide();
+	$('#handshape_4').hide();
 }
 
 function refreshPositionSelections() {
@@ -27,40 +27,76 @@ function refreshOrientationSelections() {
 }
 
 jQuery(document).ready(function() {
-	$('#finger_1').click(function() {
+	$('#left_finger_1').click(function() {
   	$('#form_field_4').slideUp();
   	$('#form_field_4').slideDown();
-		$('#hand_shape_1').show();
-		$('#hand_shape_2').hide();
-		$('#hand_shape_3').hide();
-		$('#hand_shape_4').hide();
+		$('#left_handshape_1').show();
+		$('#left_handshape_2').hide();
+		$('#left_handshape_3').hide();
+		$('#left_handshape_4').hide();
 	})
 
-	$('#finger_2').click(function() {
+	$('#right_finger_1').click(function() {
   	$('#form_field_4').slideUp();
   	$('#form_field_4').slideDown();
-		$('#hand_shape_1').hide();
-		$('#hand_shape_2').show();
-		$('#hand_shape_3').hide();
-		$('#hand_shape_4').hide();
+		$('#right_handshape_1').show();
+		$('#right_handshape_2').hide();
+		$('#right_handshape_3').hide();
+		$('#right_handshape_4').hide();
 	})
 
-	$('#finger_3').click(function() {
+	$('#left_finger_2').click(function() {
   	$('#form_field_4').slideUp();
   	$('#form_field_4').slideDown();
-		$('#hand_shape_1').hide();
-		$('#hand_shape_2').hide();
-		$('#hand_shape_3').show();
-		$('#hand_shape_4').hide();
+		$('#left_handshape_1').hide();
+		$('#left_handshape_2').show();
+		$('#left_handshape_3').hide();
+		$('#left_handshape_4').hide();
 	})
 
-	$('#finger_4').click(function() {
+	$('#right_finger_2').click(function() {
   	$('#form_field_4').slideUp();
   	$('#form_field_4').slideDown();
-		$('#hand_shape_1').hide();
-		$('#hand_shape_2').hide();
-		$('#hand_shape_3').hide();
-		$('#hand_shape_4').show();
+		$('#right_handshape_1').hide();
+		$('#right_handshape_2').show();
+		$('#right_handshape_3').hide();
+		$('#right_handshape_4').hide();
+	})
+
+	$('#left_finger_3').click(function() {
+  	$('#form_field_4').slideUp();
+  	$('#form_field_4').slideDown();
+		$('#left_handshape_1').hide();
+		$('#left_handshape_2').hide();
+		$('#left_handshape_3').show();
+		$('#left_handshape_4').hide();
+	})
+
+	$('#right_finger_3').click(function() {
+  	$('#form_field_4').slideUp();
+  	$('#form_field_4').slideDown();
+		$('#right_handshape_1').hide();
+		$('#right_handshape_2').hide();
+		$('#right_handshape_3').show();
+		$('#right_handshape_4').hide();
+	})
+
+	$('#left_finger_4').click(function() {
+  	$('#form_field_4').slideUp();
+  	$('#form_field_4').slideDown();
+		$('#left_handshape_1').hide();
+		$('#left_handshape_2').hide();
+		$('#left_handshape_3').hide();
+		$('#left_handshape_4').show();
+	})
+
+	$('#right_finger_4').click(function() {
+  	$('#form_field_4').slideUp();
+  	$('#form_field_4').slideDown();
+		$('#right_handshape_1').hide();
+		$('#right_handshape_2').hide();
+		$('#right_handshape_3').hide();
+		$('#right_handshape_4').show();
 	})
 
   $('#hand_1').click(function() {
@@ -70,6 +106,12 @@ jQuery(document).ready(function() {
 		$('#form_field_6').slideDown();
 		$('#position_hand_1').show();
 		$('#position_hand_2').hide();
+		$('#left_handshape').show();
+		$('#right_handshape').hide();
+		$('#left_fingers').show();
+		$('#right_fingers').hide();
+		$('#left_orientation').show();
+		$('#right_orientation').hide();
   })
 
   $('#hand_2').click(function() {
@@ -79,9 +121,15 @@ jQuery(document).ready(function() {
 		$('#form_field_6').slideDown();
 		$('#position_hand_1').hide();
 		$('#position_hand_2').show();
+		$('#left_handshape').show();
+		$('#right_handshape').show();
+		$('#left_fingers').show();
+		$('#right_fingers').show();
+		$('#left_orientation').show();
+		$('#right_orientation').show();
   })
 
-  $('#word_position_1').click(function() {
+  $('#sign_position_1').click(function() {
 		$('#form_field_7').slideUp();
 		$('#form_field_7').slideDown();
 		$('#movement_position_1').show();
@@ -92,7 +140,7 @@ jQuery(document).ready(function() {
 		$('#movement_position_6').hide();
   })
 
-  $('#word_position_2').click(function() {
+  $('#sign_position_2').click(function() {
 		$('#form_field_7').slideUp();
 		$('#form_field_7').slideDown();
 		$('#movement_position_1').hide();
@@ -103,7 +151,7 @@ jQuery(document).ready(function() {
 		$('#movement_position_6').hide();
   })
 
-  $('#word_position_3').click(function() {
+  $('#sign_position_3').click(function() {
 		$('#form_field_7').slideUp();
 		$('#form_field_7').slideDown();
 		$('#movement_position_1').hide();
@@ -114,7 +162,7 @@ jQuery(document).ready(function() {
 		$('#movement_position_6').hide();
   })
 
-  $('#word_position_4').click(function() {
+  $('#sign_position_4').click(function() {
 		$('#form_field_7').slideUp();
 		$('#form_field_7').slideDown();
 		$('#movement_position_1').hide();
@@ -125,7 +173,7 @@ jQuery(document).ready(function() {
 		$('#movement_position_6').hide();
   })
 
-  $('#word_position_5').click(function() {
+  $('#sign_position_5').click(function() {
 		$('#form_field_7').slideUp();
 		$('#form_field_7').slideDown();
 		$('#movement_position_1').hide();
@@ -136,7 +184,7 @@ jQuery(document).ready(function() {
 		$('#movement_position_6').hide();
   })
 
-  $('#word_position_6').click(function() {
+  $('#sign_position_6').click(function() {
 		$('#form_field_7').slideUp();
 		$('#form_field_7').slideDown();
 		$('#movement_position_1').hide();
@@ -147,7 +195,7 @@ jQuery(document).ready(function() {
 		$('#movement_position_6').show();
   })
 
-	refreshShapeSelections();
+	refreshhandshapeSelections();
 	refreshPositionSelections();
 	refreshMovementSelections();
 	refreshOrientationSelections();
