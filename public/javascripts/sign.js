@@ -1,5 +1,5 @@
 function showMovement(order, id) {
-  $('[id^=sign_' + order + '_movement_position_]').hide()
+  $('[id^=sign_' + order + '_movement_position_]').hide();
 	$('#sign_' + order + '_movement_position_' + id).show();
 }
 
