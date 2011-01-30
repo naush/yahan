@@ -100,16 +100,48 @@ h3 {
 }
 
 /* line 40, ../../../app/stylesheets/screen.scss */
-#sign_hand {
+#sign_field, #sign_position, #sign_movement, #sign_handshape, #sign_orientation, #sign_hand {
   overflow: auto;
+  margin: 20px 0px 0px 20px;
 }
 
-/* line 44, ../../../app/stylesheets/screen.scss */
+/* line 65, ../../../app/stylesheets/screen.scss */
 #sign_left_hand, #sign_1_left_hand, #sign_2_left_hand, #sign_3_left_hand {
   float: left;
 }
 
-/* line 48, ../../../app/stylesheets/screen.scss */
+/* line 69, ../../../app/stylesheets/screen.scss */
 #sign_right_hand, #sign_1_right_hand, #sign_2_right_hand, #sign_3_right_hand {
   float: right;
+}
+
+/* line 100, ../../../app/stylesheets/screen.scss */
+.scrollable {
+  position: relative;
+  overflow: hidden;
+  width: 170px;
+  height: 200px;
+}
+
+/* line 107, ../../../app/stylesheets/screen.scss */
+.scrollable img {
+  width: 150px;
+  height: 150px;
+}
+
+/* line 112, ../../../app/stylesheets/screen.scss */
+.scrollable .items {
+  /* this cannot be too large */
+  width: 20000em;
+  position: absolute;
+}
+
+/* line 121, ../../../app/stylesheets/screen.scss */
+.items div {
+  float: left;
+}
+
+/* line 125, ../../../app/stylesheets/screen.scss */
+.scrollable input[type="radio"] {
+  # display: none;
 }

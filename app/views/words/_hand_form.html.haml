@@ -12,13 +12,21 @@
   %h3 Handshape
   - (1..4).each do |finger|
     .handshape_class{:id => "sign_#{order}_#{direction}_handshape_section_#{finger}"}
-      - @handshapes.select {|handshape| handshape.finger == finger.to_s}.each do |handshape|
-        #selection
-          %input{:id => "sign_#{order}_#{direction}_handshape_finger_#{handshape[:id]}", :name => "sign_#{order}[#{direction}_handshape]", :type => "radio", :value => handshape[:id], :checked => handshape[:id] == 1}
-          = label_tag nil, image_tag(handshape[:url]), :for => "sign_#{order}_#{direction}_handshape_finger_#{handshape[:id]}"
+      %a.prev.browse.left
+      .scrollable
+        .items
+          - @handshapes.select {|handshape| handshape.finger == finger.to_s}.each do |handshape|
+            #selection
+              %input{:id => "sign_#{order}_#{direction}_handshape_finger_#{handshape[:id]}", :name => "sign_#{order}[#{direction}_handshape]", :type => "radio", :value => handshape[:id], :checked => handshape[:id] == 1}
+              = label_tag nil, image_tag(handshape[:url]), :for => "sign_#{order}_#{direction}_handshape_finger_#{handshape[:id]}"
+      %a.next.browse.right
 #sign_orientation
   %h3 Orientation
-  - @orientations.each do |orientation|
-    #selection
-      %input{:id => "sign_#{order}_#{direction}_orientation_#{orientation[:id]}", :name => "sign_#{order}[#{direction}_orientation]", :type => "radio", :value => orientation[:id], :checked => orientation[:id] == 1}
-      = label_tag nil, image_tag(orientation[:url]), :for => "sign_#{order}_#{direction}_orientation_#{orientation[:id]}"
+  %a.prev.browse.left
+  .scrollable
+    .items
+      - @orientations.each do |orientation|
+        #selection
+          %input{:id => "sign_#{order}_#{direction}_orientation_#{orientation[:id]}", :name => "sign_#{order}[#{direction}_orientation]", :type => "radio", :value => orientation[:id], :checked => orientation[:id] == 1}
+          = label_tag nil, image_tag(orientation[:url]), :for => "sign_#{order}_#{direction}_orientation_#{orientation[:id]}"
+  %a.next.browse.right

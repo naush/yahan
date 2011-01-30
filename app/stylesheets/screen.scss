@@ -37,8 +37,29 @@ h3 {
   font-weight: bold;
 }
 
+#sign_field {
+  overflow: auto;
+  margin: 20px 0px 0px 20px;
+}
+
+#sign_position {
+  @extend #sign_field
+}
+
+#sign_movement {
+  @extend #sign_field
+}
+
+#sign_handshape {
+  @extend #sign_field
+}
+
+#sign_orientation {
+  @extend #sign_field
+}
+
 #sign_hand {
-  overflow:auto;
+  @extend #sign_field
 }
 
 #sign_left_hand {
@@ -74,4 +95,33 @@ h3 {
 }
 
 .handshape_class {
+}
+
+.scrollable {
+	position:relative;
+	overflow:hidden;
+	width: 170px;
+	height:200px;
+}
+
+.scrollable img {
+ width: 150px;
+ height: 150px;
+}
+
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+}
+
+.scrollable .items #selection {
+}
+
+.items div {
+	float:left;
+}
+
+.scrollable input[type="radio"] {
+  # display: none;
 }

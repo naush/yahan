@@ -102,4 +102,6 @@ jQuery(document).ready(function() {
   loadHandlers(3);
 	refreshOrientationSelections();
 	refreshSignForm();
+
+  $(".scrollable").scrollable({circular: true});
 });
