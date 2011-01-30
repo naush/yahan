@@ -51,11 +51,11 @@ h3 {
 }
 
 #sign_handshape {
-  @extend #sign_field
+  overflow: auto;
 }
 
 #sign_orientation {
-  @extend #sign_field
+  overflow: auto;
 }
 
 #sign_hand {

@@ -100,9 +100,19 @@ h3 {
 }
 
 /* line 40, ../../../app/stylesheets/screen.scss */
-#sign_field, #sign_position, #sign_movement, #sign_handshape, #sign_orientation, #sign_hand {
+#sign_field, #sign_position, #sign_movement, #sign_hand {
   overflow: auto;
   margin: 20px 0px 0px 20px;
+}
+
+/* line 53, ../../../app/stylesheets/screen.scss */
+#sign_handshape {
+  overflow: auto;
+}
+
+/* line 57, ../../../app/stylesheets/screen.scss */
+#sign_orientation {
+  overflow: auto;
 }
 
 /* line 65, ../../../app/stylesheets/screen.scss */
