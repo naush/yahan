@@ -1,0 +1,33 @@
+#sign_form{:id => order}
+  %h3 Hand
+  %input{:id => "sign_#{order}_hand_1", :name => "sign_#{order}[hand]", :type => "radio", :value => "1", :checked => "checked"}
+  = label_tag :hand, "One", :for => "sign_#{order}_hand_1"
+  %input{:id => "sign_#{order}_hand_2", :name => "sign_#{order}[hand]", :type => "radio", :value => "2"}
+  = label_tag :hand, "Two", :for => "sign_#{order}_hand_2"
+  #sign_hand
+    .sign_hand_class{:id => "sign_#{order}_left_hand"}
+      = render "hand_form", {:direction => "left", :order => order}
+    .sign_hand_class{:id => "sign_#{order}_right_hand"}
+      = render "hand_form", {:direction => "right", :order => order}
+  #sign_position
+    %h3 Position
+    .position_hand_class{:id => "sign_#{order}_hand_1_position"}
+      - Position.one_hand.each do |position|
+        #selection
+          = radio_button_tag "sign_#{order}[position]", position[:id], position[:id] == 1
+          = label_tag nil, image_tag(position[:url]), :for => "sign_#{order}_position_#{position[:id]}"
+    .position_hand_class{:id => "sign_#{order}_hand_2_position"}
+      - Position.two_hands.each do |position|
+        #selection
+          = radio_button_tag "sign_#{order}[position]", position[:id], position[:id] == 1
+          = label_tag nil, image_tag(position[:url]), :for => "sign_#{order}_position_#{position[:id]}"
+  #sign_movement
+    %h3 Movement
+    - @positions.each do |position|
+      .movement_class{:id => "sign_#{order}_movement_position_#{position.id}"}
+        - Movement.find_by_position(position).each do |movement|
+          #selection
+            = radio_button_tag "sign_#{order}[movement]", movement[:id], movement[:id] == 1
+            = label_tag nil, image_tag(movement[:url]), :for => "sign_#{order}_movement_#{movement[:id]}"
+  = hidden_field_tag "sign_#{order}[saved]", 'false'
+  = hidden_field_tag "sign_#{order}[order]", order

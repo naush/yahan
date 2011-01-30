@@ -63,30 +63,6 @@ a img {
 }
 
 /* line 8, ../../../app/stylesheets/screen.scss */
-#tabs_wrap {
-  padding: 10px 0px 10px 0px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-/* line 15, ../../../app/stylesheets/screen.scss */
-#tabs_wrap li {
-  display: table-cell;
-  padding: 0px 5px;
-  width: 120px;
-  text-align: center;
-  font-size: 1em;
-}
-
-/* line 26, ../../../app/stylesheets/screen.scss */
-#tabs {
-  width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 32, ../../../app/stylesheets/screen.scss */
 body {
   # background-image: url("/images/background.jpg");
   background-attachment: fixed;
@@ -95,13 +71,13 @@ body {
   width: 800px;
 }
 
-/* line 40, ../../../app/stylesheets/screen.scss */
+/* line 16, ../../../app/stylesheets/screen.scss */
 form {
   display: block;
   margin-top: 0em;
 }
 
-/* line 45, ../../../app/stylesheets/screen.scss */
+/* line 21, ../../../app/stylesheets/screen.scss */
 h1 {
   display: block;
   font-size: 2em;
@@ -109,98 +85,31 @@ h1 {
   margin: 0.67em 0px;
 }
 
-/* line 52, ../../../app/stylesheets/screen.scss */
+/* line 28, ../../../app/stylesheets/screen.scss */
 h2 {
   font-size: 2em;
   line-height: 2.4;
   font-weight: bold;
 }
 
-/* line 58, ../../../app/stylesheets/screen.scss */
+/* line 34, ../../../app/stylesheets/screen.scss */
 h3 {
   font-size: 1em;
   line-height: 2.4;
   font-weight: bold;
 }
 
-/* line 64, ../../../app/stylesheets/screen.scss */
-#new_submit {
-  margin: 8px;
-  padding: 8px 0px 8px 0px;
-  width: 100%;
-}
-
-/* line 70, ../../../app/stylesheets/screen.scss */
-#word_submit {
-  margin: 20px 0px;
-  font-size: 1em;
-}
-
-/* line 75, ../../../app/stylesheets/screen.scss */
-#word_word {
-  # background-color: #D5E9F6;
-}
-
-/* line 79, ../../../app/stylesheets/screen.scss */
-#form_field, #static_form_field, #form_field_0, #form_field_1, #form_field_4, #form_field_5, #form_field_7, #form_field_8, #dynamic_form_field, #form_field_2, #form_field_3, #form_field_6 {
-  border-style: solid;
-  border-width: 1px;
-  margin: 8px;
-  padding: 10px;
+/* line 40, ../../../app/stylesheets/screen.scss */
+#sign_hand {
   overflow: auto;
-  # opacity: 0.9;
 }
 
-/* line 88, ../../../app/stylesheets/screen.scss */
-#static_form_field, #form_field_0, #form_field_1, #form_field_4, #form_field_5, #form_field_7, #form_field_8 {
-  background: #E0E0E0;
-  border-color: #777;
-}
-
-/* line 94, ../../../app/stylesheets/screen.scss */
-#dynamic_form_field, #form_field_2, #form_field_3, #form_field_6 {
-  background: #FEF;
-  border-color: #CE4DD6;
-}
-
-/* line 136, ../../../app/stylesheets/screen.scss */
-#selection {
-  display: inline-block;
-  vertical-align: bottom;
-}
-
-/* line 141, ../../../app/stylesheets/screen.scss */
-#left_handshape {
-  width: 50%;
+/* line 44, ../../../app/stylesheets/screen.scss */
+#sign_left_hand, #sign_1_left_hand, #sign_2_left_hand, #sign_3_left_hand {
   float: left;
 }
 
-/* line 146, ../../../app/stylesheets/screen.scss */
-#right_handshape {
-  width: 50%;
-  float: left;
-}
-
-/* line 151, ../../../app/stylesheets/screen.scss */
-#left_orientation {
-  width: 50%;
-  float: left;
-}
-
-/* line 156, ../../../app/stylesheets/screen.scss */
-#right_orientation {
-  width: 50%;
-  float: left;
-}
-
-/* line 161, ../../../app/stylesheets/screen.scss */
-#left_fingers {
-  width: 50%;
-  float: left;
-}
-
-/* line 166, ../../../app/stylesheets/screen.scss */
-#right_fingers {
-  width: 50%;
-  float: left;
+/* line 48, ../../../app/stylesheets/screen.scss */
+#sign_right_hand, #sign_1_right_hand, #sign_2_right_hand, #sign_3_right_hand {
+  float: right;
 }

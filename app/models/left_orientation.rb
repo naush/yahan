@@ -1,2 +1,2 @@
-class RightOrientation < Orientation
+class LeftOrientation < Orientation
 end

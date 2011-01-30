@@ -5,30 +5,6 @@
 
 @import "compass/reset";
 
-#tabs_wrap {
-  padding: 10px 0px 10px 0px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-#tabs_wrap li {
-  display: table-cell;
-  padding: 0px 5px;
-  width: 120px;
-  text-align: center;
-  font-size: 1em;
-}
-
-#tabs_wrap li.current {
-}
-
-#tabs {
-  width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 body {
   # background-image: url('/images/background.jpg');
   background-attachment: fixed;
@@ -61,109 +37,41 @@ h3 {
   font-weight: bold;
 }
 
-#new_submit {
-  margin: 8px;
-  padding: 8px 0px 8px 0px;
-  width: 100%;
-}
-
-#word_submit {
-  margin: 20px 0px;
-  font-size: 1em;
-}
-
-#word_word {
-  # background-color: #D5E9F6;
-}
-
-#form_field {
-  border-style: solid;
-  border-width: 1px;
-  margin: 8px;
-  padding: 10px;
+#sign_hand {
   overflow:auto;
-  # opacity: 0.9;
 }
 
-#static_form_field {
-  @extend #form_field;
-  background: #E0E0E0;
-  border-color: #777;
-}
-
-#dynamic_form_field {
-  @extend #form_field;
-  background: #FEF;
-  border-color: #CE4DD6;
-}
-
-#form_field_0 {
-  @extend #static_form_field;
-}
-
-#form_field_1 {
-  @extend #static_form_field;
-}
-
-#form_field_2 {
-  @extend #dynamic_form_field;
-}
-
-#form_field_3 {
-  @extend #dynamic_form_field;
-}
-
-#form_field_4 {
-  @extend #static_form_field;
-}
-
-#form_field_5 {
-  @extend #static_form_field;
-}
-
-#form_field_6 {
-  @extend #dynamic_form_field;
-}
-
-#form_field_7 {
-  @extend #static_form_field;
-}
-
-#form_field_8 {
-  @extend #static_form_field;
-}
-
-#selection {
-  display: inline-block;
-  vertical-align: bottom;
-}
-
-#left_handshape {
-  width: 50%;
+#sign_left_hand {
   float: left;
 }
 
-#right_handshape {
-  width: 50%;
-  float: left;
+#sign_right_hand {
+  float: right;
 }
 
-#left_orientation {
-  width: 50%;
-  float: left;
+#sign_1_left_hand {
+  @extend #sign_left_hand
 }
 
-#right_orientation {
-  width: 50%;
-  float: left;
+#sign_1_right_hand {
+  @extend #sign_right_hand
 }
 
-#left_fingers {
-  width: 50%;
-  float: left;
+#sign_2_left_hand {
+  @extend #sign_left_hand
 }
 
-#right_fingers {
-  width: 50%;
-  float: left;
+#sign_2_right_hand {
+  @extend #sign_right_hand
+}
+
+#sign_3_left_hand {
+  @extend #sign_left_hand
+}
+
+#sign_3_right_hand {
+  @extend #sign_right_hand
+}
+
+.handshape_class {
 }

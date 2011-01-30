@@ -1,0 +1,23 @@
+#word_form
+  %h2 Submit New Word
+  - form_for @word do |f|
+    #word_text
+      %h3 Word
+      = f.text_field :text
+    #word_dialect
+      %h3 Dialect
+      - Dialect.all.each do |dialect|
+        = f.radio_button :dialect, dialect[:id], :checked => dialect[:name] == "East Coast"
+        = label_tag :dialect, dialect[:name], :for => "word_dialect_#{dialect[:id]}"
+    #word_signs
+      %h3 Movements
+      = render 'sign_form', :order => '1'
+      = link_to "Add new movement", "#sign_form_1", :id => "add_movement_1"
+      = render 'sign_form', :order => '2'
+      = link_to "Add new movement", "#sign_form_2", :id => "add_movement_2"
+      = render 'sign_form', :order => '3'
+      = link_to "Add new movement", "#sign_form_3", :id => "add_movement_3"
+    #word_memo
+      %h3 Memo
+      = f.text_field :memo
+    = f.submit "Submit"

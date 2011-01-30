@@ -10,11 +10,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110127214525) do
+ActiveRecord::Schema.define(:version => 20110130070910) do
 
   create_table "dialects", :force => true do |t|
     t.string   "name"
-    t.integer  "word_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -22,7 +21,6 @@ ActiveRecord::Schema.define(:version => 20110127214525) do
   create_table "handshapes", :force => true do |t|
     t.string   "finger"
     t.string   "url"
-    t.integer  "sign_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -30,14 +28,12 @@ ActiveRecord::Schema.define(:version => 20110127214525) do
   create_table "movements", :force => true do |t|
     t.string   "url"
     t.integer  "position_id"
-    t.integer  "sign_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "orientations", :force => true do |t|
     t.string   "url"
-    t.integer  "sign_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -54,6 +50,13 @@ ActiveRecord::Schema.define(:version => 20110127214525) do
     t.integer  "order"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "word_id"
+    t.integer  "left_handshape_id"
+    t.integer  "right_handshape_id"
+    t.integer  "left_orientation_id"
+    t.integer  "right_orientation_id"
+    t.integer  "position_id"
+    t.integer  "movement_id"
   end
 
   create_table "words", :force => true do |t|
@@ -61,6 +64,7 @@ ActiveRecord::Schema.define(:version => 20110127214525) do
     t.text     "memo"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "dialect_id"
   end
 
 end
