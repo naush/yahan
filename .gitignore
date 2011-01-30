@@ -3,3 +3,5 @@ db/*.sqlite3
 log/*.log
 tmp/**/*
 public/images/orientations/.DS_Store
+.DS_Store
+public/images/about_comic/_notes/dwsync.xml
