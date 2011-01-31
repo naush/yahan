@@ -103,5 +103,5 @@ jQuery(document).ready(function() {
 	refreshOrientationSelections();
 	refreshSignForm();
 
-  $(".scrollable").scrollable({circular: true});
+  $(".scrollable").scrollable();
 });
