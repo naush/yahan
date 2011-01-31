@@ -99,33 +99,38 @@ h3 {
   font-weight: bold;
 }
 
-/* line 40, ../../../app/stylesheets/screen.scss */
+/* line 43, ../../../app/stylesheets/screen.scss */
+#word_submit {
+  margin: 10px 0px 0px 0px;
+}
+
+/* line 47, ../../../app/stylesheets/screen.scss */
 #sign_field, #sign_position, #sign_movement, #sign_hand {
   overflow: auto;
   margin: 20px 0px 0px 0px;
 }
 
-/* line 56, ../../../app/stylesheets/screen.scss */
+/* line 63, ../../../app/stylesheets/screen.scss */
 #sign_handshape {
   overflow: auto;
 }
 
-/* line 60, ../../../app/stylesheets/screen.scss */
+/* line 67, ../../../app/stylesheets/screen.scss */
 #sign_orientation {
   overflow: auto;
 }
 
-/* line 68, ../../../app/stylesheets/screen.scss */
+/* line 75, ../../../app/stylesheets/screen.scss */
 #sign_left_hand, #sign_1_left_hand, #sign_2_left_hand, #sign_3_left_hand {
   float: left;
 }
 
-/* line 72, ../../../app/stylesheets/screen.scss */
+/* line 79, ../../../app/stylesheets/screen.scss */
 #sign_right_hand, #sign_1_right_hand, #sign_2_right_hand, #sign_3_right_hand {
   float: right;
 }
 
-/* line 103, ../../../app/stylesheets/screen.scss */
+/* line 110, ../../../app/stylesheets/screen.scss */
 .scrollable {
   position: relative;
   overflow: hidden;
@@ -133,25 +138,25 @@ h3 {
   height: 200px;
 }
 
-/* line 110, ../../../app/stylesheets/screen.scss */
+/* line 117, ../../../app/stylesheets/screen.scss */
 .scrollable img {
   width: 150px;
   height: 150px;
 }
 
-/* line 115, ../../../app/stylesheets/screen.scss */
+/* line 122, ../../../app/stylesheets/screen.scss */
 .scrollable .items {
   /* this cannot be too large */
   width: 20000em;
   position: absolute;
 }
 
-/* line 124, ../../../app/stylesheets/screen.scss */
+/* line 131, ../../../app/stylesheets/screen.scss */
 .items div {
   float: left;
 }
 
-/* line 128, ../../../app/stylesheets/screen.scss */
+/* line 135, ../../../app/stylesheets/screen.scss */
 .scrollable input[type="radio"] {
   # display: none;
 }
