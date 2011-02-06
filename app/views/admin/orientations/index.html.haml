@@ -1,0 +1,9 @@
+#main
+  %table
+    %tr
+      %th Url
+      %th Image
+    - @orientations.each do |orientation|
+      %tr
+        %td= orientation.url
+        %td= image_tag orientation.url

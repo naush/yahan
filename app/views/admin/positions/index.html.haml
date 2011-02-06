@@ -1,0 +1,11 @@
+#main
+  %table
+    %tr
+      %th Hand
+      %th Url
+      %th Image
+    - @positions.each do |position|
+      %tr
+        %td= position.hand
+        %td= position.url
+        %td= image_tag position.url

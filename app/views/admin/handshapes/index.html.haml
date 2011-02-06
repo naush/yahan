@@ -1,0 +1,11 @@
+#main
+  %table
+    %tr
+      %th Finger
+      %th Url
+      %th Image
+    - @handshapes.each do |handshape|
+      %tr
+        %td= handshape.finger
+        %td= handshape.url
+        %td= image_tag handshape.url

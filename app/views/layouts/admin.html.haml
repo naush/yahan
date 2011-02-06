@@ -1,6 +1,5 @@
 %html
   %head
-    %title Yahan
     = stylesheet_link_tag :all
     = javascript_include_tag 'jquery.min.js'
     = javascript_include_tag 'jquery.tools.min.js'
@@ -12,13 +11,22 @@
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
     = csrf_meta_tag
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
-    %title Sign Language Communication Project
+    %title Sign Language Communication Project: Admin
     %link{:href => "http://www.yahantsui.com/SLCP/SLCP2010.css", :rel => "stylesheet", :type => "text/css"}/
   %body
     #main
       #header
         = render :partial => 'layouts/header'
+      #admin_sign
+        %p
+          - if admin_signed_in?
+            = "Signed in as #{current_admin.email}. Not you?"
+            = link_to "Sign out", destroy_admin_session_path
+          - else
+            = link_to "Sign in", new_admin_session_path
       %p{:class => "notice"}
       %p{:class => "alert"}
+      #admin_home
+        %p= link_to "Admin Home", :controller => "admin/index"
       = yield
       %img{:src => "/images/footer.jpg"}
