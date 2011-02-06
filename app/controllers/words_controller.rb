@@ -1,6 +1,4 @@
 class WordsController < ApplicationController
-  set_tab :new_word
-
   def new
     @word = Word.new
     @handshapes = Handshape.all
