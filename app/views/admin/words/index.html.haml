@@ -15,9 +15,9 @@
         %td= word.text
         %td= sign.order
         %td= image_tag sign.left_handshape.url
-        %td= image_tag sign.right_handshape.url
+        %td= image_tag sign.right_handshape.url if sign.right_handshape
         %td= image_tag sign.left_orientation.url
-        %td= image_tag sign.right_orientation.url
+        %td= image_tag sign.right_orientation.url  if sign.right_orientation
         %td= image_tag sign.position.url
         %td= image_tag sign.movement.url
         %td= button_to 'Remove', admin_word_path(sign), :confirm => 'Are you sure?', :method => :delete
