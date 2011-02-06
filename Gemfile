@@ -25,7 +25,7 @@ gem "sqlite3-ruby", :require => "sqlite3"
 gem "haml"
 gem "seed-fu"
 gem "compass", ">= 0.10.6"
-gem "tabs_on_rails"
+gem "devise"
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
