@@ -45,11 +45,13 @@ Yahan::Application.routes.draw do
 
   # Sample resource route within a namespace:
     namespace :admin do
+      resources :words
       resources :dialects
       resources :handshapes
       resources :movements
       resources :orientations
       resources :positions
+      resources :images
     end
 
   # You can have the root of your site routed with "root"

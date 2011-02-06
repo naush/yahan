@@ -1,0 +1,23 @@
+%table
+  %tr
+    %th Word
+    %th Order
+    %th Left Handshape
+    %th Right Handshape
+    %th Left Orientation
+    %th Right Orientation
+    %th Position
+    %th Movement
+    %th Actions
+  - @words.each do |word|
+    - @signs.select { |sign| sign.word_id == word.id }.each do |sign|
+      %tr
+        %td= word.text
+        %td= sign.order
+        %td= image_tag sign.left_handshape.url
+        %td= image_tag sign.right_handshape.url
+        %td= image_tag sign.left_orientation.url
+        %td= image_tag sign.right_orientation.url
+        %td= image_tag sign.position.url
+        %td= image_tag sign.movement.url
+        %td= button_to 'Remove', admin_word_path(sign), :confirm => 'Are you sure?', :method => :delete

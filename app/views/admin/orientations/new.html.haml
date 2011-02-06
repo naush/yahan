@@ -1,0 +1,4 @@
+- form_for [:admin, @orientation], :html => { :multipart => true } do |f|
+  = f.file_field :file
+  = f.submit "Create"
+= link_to 'Back', admin_orientations_path

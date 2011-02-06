@@ -1,0 +1,5 @@
+- form_for [:admin, @image], :html => { :multipart => true } do |f|
+  / = f.select :attach_to, ["handshape", "movement", "orientation", "position"]
+  = f.file_field :file
+  = f.submit "Upload"
+= link_to 'Back', admin_images_path

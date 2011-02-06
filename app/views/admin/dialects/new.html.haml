@@ -1,0 +1,5 @@
+- form_for [:admin, @dialect], :html => { :multipart => true } do |f|
+  Name
+  = f.text_field :name
+  = f.submit "Create"
+= link_to 'Back', admin_dialects_path

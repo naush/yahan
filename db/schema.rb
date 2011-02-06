@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110206025507) do
+ActiveRecord::Schema.define(:version => 20110206211031) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
@@ -42,6 +42,15 @@ ActiveRecord::Schema.define(:version => 20110206025507) do
     t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_id"
+  end
+
+  create_table "images", :force => true do |t|
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
+    t.string   "attach_to"
   end
 
   create_table "movements", :force => true do |t|
@@ -49,12 +58,14 @@ ActiveRecord::Schema.define(:version => 20110206025507) do
     t.integer  "position_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_id"
   end
 
   create_table "orientations", :force => true do |t|
     t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_id"
   end
 
   create_table "positions", :force => true do |t|
@@ -63,6 +74,7 @@ ActiveRecord::Schema.define(:version => 20110206025507) do
     t.integer  "sign_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_id"
   end
 
   create_table "signs", :force => true do |t|

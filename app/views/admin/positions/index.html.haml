@@ -3,8 +3,12 @@
     %th Hand
     %th Url
     %th Image
+    %th Actions
   - @positions.each do |position|
     %tr
       %td= position.hand
       %td= position.url
       %td= image_tag position.url
+      %td= button_to 'Remove', admin_position_path(position), :confirm => 'Are you sure?', :method => :delete
+
+= link_to "Add new position", new_admin_position_path

@@ -1,6 +1,10 @@
 %table
   %tr
-    %td Name
+    %th Name
+    %th Actions
   - @dialects.each do |dialect|
     %tr
     %td= dialect.name
+    %td= button_to 'Remove', admin_dialect_path(dialect), :confirm => 'Are you sure?', :method => :delete
+
+= link_to "Add new dialect", new_admin_dialect_path

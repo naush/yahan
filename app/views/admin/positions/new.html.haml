@@ -1,0 +1,5 @@
+- form_for [:admin, @position], :html => { :multipart => true } do |f|
+  = f.select :hand, [1, 2]
+  = f.file_field :file
+  = f.submit "Create"
+= link_to 'Back', admin_positions_path

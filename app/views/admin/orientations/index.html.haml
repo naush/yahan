@@ -6,3 +6,6 @@
     %tr
       %td= orientation.url
       %td= image_tag orientation.url
+      %td= button_to 'Remove', admin_orientation_path(orientation), :confirm => 'Are you sure?', :method => :delete
+
+= link_to "Add new orientation", new_admin_orientation_path

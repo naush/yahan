@@ -8,3 +8,6 @@
       %td= movement.url
       %td= image_tag movement.url
       %td= image_tag Position.find(movement.position_id).url
+      %td= button_to 'Remove', admin_movement_path(movement), :confirm => 'Are you sure?', :method => :delete
+
+= link_to "Add new movement", new_admin_movement_path

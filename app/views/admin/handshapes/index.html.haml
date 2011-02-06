@@ -3,8 +3,12 @@
     %th Finger
     %th Url
     %th Image
+    %th Actions
   - @handshapes.each do |handshape|
     %tr
       %td= handshape.finger
       %td= handshape.url
       %td= image_tag handshape.url
+      %td= button_to 'Remove', admin_handshape_path(handshape), :confirm => 'Are you sure?', :method => :delete
+
+= link_to "Add new handshape", new_admin_handshape_path

@@ -1,0 +1,10 @@
+- form_for [:admin, @movement], :html => { :multipart => true } do |f|
+  %h3 File
+  = f.file_field :file
+  %h3 Associated Position
+  - @positions.each do |position|
+    #selection
+      = f.radio_button :position_id, position[:id], :checked => position[:id] == 1
+      = f.label image_tag(position[:url]), :for => "movement_position_id_#{position[:id]}"
+  = f.submit "Create"
+= link_to 'Back', admin_movements_path

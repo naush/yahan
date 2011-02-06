@@ -1,0 +1,5 @@
+- form_for [:admin, @handshape], :html => { :multipart => true } do |f|
+  = f.select :finger, [1, 2, 3, 4]
+  = f.file_field :file
+  = f.submit "Create"
+= link_to 'Back', admin_handshapes_path

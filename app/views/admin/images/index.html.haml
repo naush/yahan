@@ -1,0 +1,15 @@
+%table
+  %tr
+    %th Original
+    %th Medium
+    %th Thumb
+    / %th Attach To
+  - @images.each do |image|
+    %tr
+      %td= image_tag image.file.url
+      %td= image_tag image.file.url(:medium)
+      %td= image_tag image.file.url(:thumb)
+      / %td= image.attach_to
+      %td= button_to 'Remove', admin_image_path(image), :confirm => 'Are you sure?', :method => :delete
+
+= link_to "Add new image", new_admin_image_path
