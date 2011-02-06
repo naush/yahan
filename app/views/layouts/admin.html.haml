@@ -17,16 +17,17 @@
     #main
       #header
         = render :partial => 'layouts/header'
-      #admin_sign
-        %p
-          - if admin_signed_in?
-            = "Signed in as #{current_admin.email}. Not you?"
-            = link_to "Sign out", destroy_admin_session_path
-          - else
-            = link_to "Sign in", new_admin_session_path
-      %p{:class => "notice"}
-      %p{:class => "alert"}
-      #admin_home
-        %p= link_to "Admin Home", :controller => "admin/index"
-      = yield
+      #main
+        #admin_sign
+          %p
+            - if admin_signed_in?
+              = "Signed in as #{current_admin.email}. Not you?"
+              = link_to "Sign out", destroy_admin_session_path
+            - else
+              = link_to "Sign in", new_admin_session_path
+        %p{:class => "notice"}
+        %p{:class => "alert"}
+        #admin_home
+          %p= link_to "Admin Home", :controller => "admin/index"
+        = yield
       %img{:src => "/images/footer.jpg"}

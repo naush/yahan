@@ -1,11 +1,10 @@
-#main
-  %table
+%table
+  %tr
+    %th Url
+    %th Image
+    %th Position
+  - @movements.each do |movement|
     %tr
-      %th Url
-      %th Image
-      %th Position
-    - @movements.each do |movement|
-      %tr
-        %td= movement.url
-        %td= image_tag movement.url
-        %td= image_tag Position.find(movement.position_id).url
+      %td= movement.url
+      %td= image_tag movement.url
+      %td= image_tag Position.find(movement.position_id).url

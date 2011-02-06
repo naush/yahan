@@ -1,9 +1,8 @@
-#main
-  %table
+%table
+  %tr
+    %th Url
+    %th Image
+  - @orientations.each do |orientation|
     %tr
-      %th Url
-      %th Image
-    - @orientations.each do |orientation|
-      %tr
-        %td= orientation.url
-        %td= image_tag orientation.url
+      %td= orientation.url
+      %td= image_tag orientation.url

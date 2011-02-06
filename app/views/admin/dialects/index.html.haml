@@ -1,7 +1,6 @@
-#main
-  %table
+%table
+  %tr
+    %td Name
+  - @dialects.each do |dialect|
     %tr
-      %td Name
-    - @dialects.each do |dialect|
-      %tr
-      %td= dialect.name
+    %td= dialect.name
