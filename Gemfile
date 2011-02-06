@@ -26,6 +26,8 @@ gem "haml"
 gem "seed-fu"
 gem "compass", ">= 0.10.6"
 gem "devise"
+gem 'hpricot'
+gem 'ruby_parser'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators

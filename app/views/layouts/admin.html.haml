@@ -14,20 +14,19 @@
     %title Sign Language Communication Project: Admin
     %link{:href => "http://www.yahantsui.com/SLCP/SLCP2010.css", :rel => "stylesheet", :type => "text/css"}/
   %body
+    #header
+      = render :partial => 'layouts/header'
     #main
-      #header
-        = render :partial => 'layouts/header'
-      #main
-        #admin_sign
-          %p
-            - if admin_signed_in?
-              = "Signed in as #{current_admin.email}. Not you?"
-              = link_to "Sign out", destroy_admin_session_path
-            - else
-              = link_to "Sign in", new_admin_session_path
-        %p{:class => "notice"}
-        %p{:class => "alert"}
-        #admin_home
-          %p= link_to "Admin Home", :controller => "admin/index"
-        = yield
-      %img{:src => "/images/footer.jpg"}
+      #admin_sign
+        %p
+          - if admin_signed_in?
+            = "Signed in as #{current_admin.email}. Not you?"
+            = link_to "Sign out", destroy_admin_session_path
+          - else
+            = link_to "Sign in", new_admin_session_path
+      %p{:class => "notice"}
+      %p{:class => "alert"}
+      #admin_home
+        %p= link_to "Admin Home", :controller => "admin/index"
+      = yield
+    %img{:src => "/images/footer.jpg"}

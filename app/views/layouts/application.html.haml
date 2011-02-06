@@ -14,10 +14,9 @@
     %title Sign Language Communication Project
     %link{:href => "http://www.yahantsui.com/SLCP/SLCP2010.css", :rel => "stylesheet", :type => "text/css"}/
   %body
-    #main
-      #header
-        = render :partial => 'layouts/header'
-      %p{:class => "notice"}
-      %p{:class => "alert"}
-      = yield
-      %img{:src => "/images/footer.jpg"}
+    #header
+      = render :partial => 'layouts/header'
+    %p{:class => "notice"}
+    %p{:class => "alert"}
+    = yield
+    %img{:src => "/images/footer.jpg"}
