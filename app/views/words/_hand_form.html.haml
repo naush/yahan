@@ -1,15 +1,13 @@
 #sign_finger
-  %h3 Finger
+  %label Finger
   %input{:id => "sign_#{order}_#{direction}_finger_1", :name => "sign_#{order}[#{direction}_finger]", :type => "radio", :value => "1", :checked => "checked"}
-  = label_tag :finger, "Zero, One", :for => "sign_#{order}_#{direction}_finger_1"
+  = label_tag :finger, "0-1", :for => "sign_#{order}_#{direction}_finger_1"
   %input{:id => "sign_#{order}_#{direction}_finger_2", :name => "sign_#{order}[#{direction}_finger]", :type => "radio", :value => "2"}
-  = label_tag :finger, "Two", :for => "sign_#{order}_#{direction}_finger_2"
+  = label_tag :finger, "2", :for => "sign_#{order}_#{direction}_finger_2"
   %input{:id => "sign_#{order}_#{direction}_finger_3", :name => "sign_#{order}[#{direction}_finger]", :type => "radio", :value => "3"}
-  = label_tag :finger, "Three", :for => "sign_#{order}_#{direction}_finger_3"
+  = label_tag :finger, "3", :for => "sign_#{order}_#{direction}_finger_3"
   %input{:id => "sign_#{order}_#{direction}_finger_4", :name => "sign_#{order}[#{direction}_finger]", :type => "radio", :value => "4"}
-  = label_tag :finger, "Four, Five", :for => "sign_#{order}_#{direction}_finger_4"
-#sign_handshape
-  %h3 Handshape
+  = label_tag :finger, "4-5", :for => "sign_#{order}_#{direction}_finger_4"
   - (1..4).each do |finger|
     .handshape_class{:id => "sign_#{order}_#{direction}_handshape_section_#{finger}"}
       %a.prev.browse.left

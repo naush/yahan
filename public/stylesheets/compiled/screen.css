@@ -99,64 +99,157 @@ h3 {
   font-weight: bold;
 }
 
-/* line 43, ../../../app/stylesheets/screen.scss */
+/* line 40, ../../../app/stylesheets/screen.scss */
+label {
+  font-size: 1em;
+  line-height: 2.4;
+  font-weight: bold;
+  text-align: middle;
+  text-transform: capitalize;
+  width: 100px;
+}
+
+/* line 52, ../../../app/stylesheets/screen.scss */
 #word_submit {
   margin: 10px 0px 0px 0px;
 }
 
-/* line 47, ../../../app/stylesheets/screen.scss */
-#sign_field, #sign_position, #sign_movement, #sign_hand {
+/* line 56, ../../../app/stylesheets/screen.scss */
+#sign_field, .sign_position, .sign_movement, #sign_hand {
   overflow: auto;
   margin: 20px 0px 0px 0px;
 }
 
-/* line 63, ../../../app/stylesheets/screen.scss */
+/* line 61, ../../../app/stylesheets/screen.scss */
+#sign_finger {
+  width: 327px;
+  height: 238px;
+}
+
+/* line 74, ../../../app/stylesheets/screen.scss */
 #sign_handshape {
   overflow: auto;
 }
 
-/* line 67, ../../../app/stylesheets/screen.scss */
+/* line 78, ../../../app/stylesheets/screen.scss */
 #sign_orientation {
   overflow: auto;
 }
 
-/* line 75, ../../../app/stylesheets/screen.scss */
-#sign_left_hand, #sign_1_left_hand, #sign_2_left_hand, #sign_3_left_hand {
+/* line 124, ../../../app/stylesheets/screen.scss */
+.items div {
   float: left;
 }
 
-/* line 79, ../../../app/stylesheets/screen.scss */
-#sign_right_hand, #sign_1_right_hand, #sign_2_right_hand, #sign_3_right_hand {
-  float: right;
-}
-
-/* line 110, ../../../app/stylesheets/screen.scss */
+/* line 128, ../../../app/stylesheets/screen.scss */
 .scrollable {
   position: relative;
   overflow: hidden;
-  width: 170px;
-  height: 200px;
+  width: 224.6666px;
+  height: 120px;
 }
 
-/* line 117, ../../../app/stylesheets/screen.scss */
+/* line 135, ../../../app/stylesheets/screen.scss */
 .scrollable img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 
-/* line 122, ../../../app/stylesheets/screen.scss */
+/* line 140, ../../../app/stylesheets/screen.scss */
 .scrollable .items {
   /* this cannot be too large */
   width: 20000em;
   position: absolute;
 }
 
-/* line 131, ../../../app/stylesheets/screen.scss */
-.items div {
-  float: left;
+/* line 146, ../../../app/stylesheets/screen.scss */
+.scrollable .items #selection {
+  width: 113.3333px;
+  height: 133.3333px;
 }
 
-/* line 135, ../../../app/stylesheets/screen.scss */
+/* line 151, ../../../app/stylesheets/screen.scss */
 .scrollable input[type="radio"] {
   # display: none;
+}
+
+/* line 159, ../../../app/stylesheets/screen.scss */
+.scrollable_page {
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+  height: 550px;
+}
+
+/* line 166, ../../../app/stylesheets/screen.scss */
+.scrollable_page img {
+  width: 150px;
+  height: 150px;
+}
+
+/* line 171, ../../../app/stylesheets/screen.scss */
+.scrollable_page .items {
+  /* this cannot be too large */
+  width: 20000em;
+  position: absolute;
+}
+
+/* line 177, ../../../app/stylesheets/screen.scss */
+.scrollable_page .items #selection {
+  width: 100%;
+  height: 500px;
+}
+
+/* line 184, ../../../app/stylesheets/screen.scss */
+.scrollable_movement {
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+  height: 550px;
+}
+
+/* line 191, ../../../app/stylesheets/screen.scss */
+.scrollable_movement img {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 196, ../../../app/stylesheets/screen.scss */
+.scrollable_movement .items {
+  /* this cannot be too large */
+  width: 20000em;
+  position: absolute;
+}
+
+/* line 202, ../../../app/stylesheets/screen.scss */
+.scrollable_movement .items #selection {
+  width: 700px;
+  height: 200px;
+}
+
+/* line 209, ../../../app/stylesheets/screen.scss */
+.scrollable_position_movement {
+  position: relative;
+  overflow: hidden;
+  width: 453.3332px;
+  height: 120px;
+}
+
+/* line 216, ../../../app/stylesheets/screen.scss */
+.scrollable_position_movement img {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 221, ../../../app/stylesheets/screen.scss */
+.scrollable_position_movement .items {
+  /* this cannot be too large */
+  width: 20000em;
+  position: absolute;
+}
+
+/* line 227, ../../../app/stylesheets/screen.scss */
+.scrollable_position_movement .items #selection {
+  width: 113.3333px;
+  height: 133.3333px;
 }

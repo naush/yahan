@@ -37,6 +37,15 @@ h3 {
   font-weight: bold;
 }
 
+label {
+  font-size: 1em;
+  line-height: 2.4;
+  font-weight: bold;
+  text-align: middle;
+  text-transform: capitalize;
+  width: 100px;
+}
+
 #word_memo {
 }
 
@@ -50,13 +59,15 @@ h3 {
 }
 
 #sign_finger {
+  width: 327px;
+  height: 238px;
 }
 
-#sign_position {
+.sign_position {
   @extend #sign_field
 }
 
-#sign_movement {
+.sign_movement {
   @extend #sign_field
 }
 
@@ -73,11 +84,9 @@ h3 {
 }
 
 #sign_left_hand {
-  float: left;
 }
 
 #sign_right_hand {
-  float: right;
 }
 
 #sign_1_left_hand {
@@ -107,16 +116,25 @@ h3 {
 .handshape_class {
 }
 
+
+
+
+
+
+.items div {
+	float: left;
+}
+
 .scrollable {
 	position:relative;
 	overflow:hidden;
-	width: 170px;
-	height:200px;
+	width: 224.6666px;
+	height: 120px;
 }
 
 .scrollable img {
- width: 150px;
- height: 150px;
+ width: 100px;
+ height: 100px;
 }
 
 .scrollable .items {
@@ -126,12 +144,87 @@ h3 {
 }
 
 .scrollable .items #selection {
-}
-
-.items div {
-	float:left;
+	width: 113.3333px;
+	height: 133.3333px;
 }
 
 .scrollable input[type="radio"] {
   # display: none;
+}
+
+
+
+
+
+.scrollable_page {
+	position:relative;
+	overflow:hidden;
+	width: 700px;
+	height: 550px;
+}
+
+.scrollable_page img {
+  width: 150px;
+  height: 150px;
+}
+
+.scrollable_page .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+}
+
+.scrollable_page .items #selection {
+	width: 100%;
+	height: 500px;
+}
+
+
+
+.scrollable_movement {
+	position:relative;
+	overflow:hidden;
+	width: 700px;
+	height: 550px;
+}
+
+.scrollable_movement img {
+ width: 100px;
+ height: 100px;
+}
+
+.scrollable_movement .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+}
+
+.scrollable_movement .items #selection {
+	width: 700px;
+	height: 200px;
+}
+
+
+
+.scrollable_position_movement {
+	position:relative;
+	overflow:hidden;
+	width: 453.3332px;
+	height: 120px;
+}
+
+.scrollable_position_movement img {
+ width: 100px;
+ height: 100px;
+}
+
+.scrollable_position_movement .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+}
+
+.scrollable_position_movement .items #selection {
+	width: 113.3333px;
+	height: 133.3333px;
 }

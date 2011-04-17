@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+/* line 4, ../../../app/stylesheets/SLCP2010.scss */
+body {
+  /*background-color: #0E0017;*/
+  color: #1F0A2C;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 11, ../../../app/stylesheets/SLCP2010.scss */
+#main {
+  background-color: #FFFFFF;
+  width: 800px;
+  margin-left: 20px;
+}
+
+/* line 17, ../../../app/stylesheets/SLCP2010.scss */
+#header {
+  text-align: justify;
+  /*background: url(images/web/nav_bar.png) right bottom no-repeat; */
+}
+
+/* line 24, ../../../app/stylesheets/SLCP2010.scss */
+#include {
+  background-color: #FFFFFF;
+}
+
+/* line 28, ../../../app/stylesheets/SLCP2010.scss */
+#main {
+  padding: 20px;
+  width: 800px;
+}
+
+/* line 32, ../../../app/stylesheets/SLCP2010.scss */
+#content {
+  margin-left: 20px;
+  width: 780px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+/* line 39, ../../../app/stylesheets/SLCP2010.scss */
+#a_right {
+  padding-top: 10px;
+  width: 600px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+/* line 46, ../../../app/stylesheets/SLCP2010.scss */
+#a_left {
+  width: 150px;
+}
+
+/* line 49, ../../../app/stylesheets/SLCP2010.scss */
+#a_right, #a_left {
+  float: left;
+}
+
+/* line 55, ../../../app/stylesheets/SLCP2010.scss */
+#video {
+  height: 300px;
+  background-color: #330033;
+}
+
+/* line 60, ../../../app/stylesheets/SLCP2010.scss */
+#gestSelect {
+  background-color: #FFFFFF;
+  overflow: auto;
+  height: 150px;
+  width: 760px;
+}
+
+/* line 67, ../../../app/stylesheets/SLCP2010.scss */
+#orientation {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  height: 120px;
+  width: 780px;
+}
+
+/* line 74, ../../../app/stylesheets/SLCP2010.scss */
+#positions {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  height: 110px;
+  width: 780px;
+}
+
+/* line 81, ../../../app/stylesheets/SLCP2010.scss */
+#movements {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  height: 110px;
+  width: 780px;
+}
+
+/*define link style */
+/* line 88, ../../../app/stylesheets/SLCP2010.scss */
+img {
+  border: none;
+}
+
+/* line 92, ../../../app/stylesheets/SLCP2010.scss */
+a {
+  border: none;
+  color: #6600CC;
+  text-decoration: none;
+  font: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 100, ../../../app/stylesheets/SLCP2010.scss */
+i {
+  color: #2B081F;
+}
+
+/* line 103, ../../../app/stylesheets/SLCP2010.scss */
+a:hover {
+  border: none;
+  color: #6600FF;
+}
+
+/* line 108, ../../../app/stylesheets/SLCP2010.scss */
+li {
+  margin: none;
+  padding: none;
+}
+
+/* line 113, ../../../app/stylesheets/SLCP2010.scss */
+ul {
+  margin: none;
+  padding: none;
+}
+
+/* line 118, ../../../app/stylesheets/SLCP2010.scss */
+h3 {
+  padding: none;
+  margin: none;
+}

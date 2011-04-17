@@ -30,14 +30,14 @@ function refreshMovementSelections(order) {
 function refreshOrientationSelections() {
 }
 
-function refreshSignForm() {
-	$('#sign_form_1').hide();
-	$('#sign_1_saved').attr('value', 'false');
-	$('#sign_form_2').hide();
-	$('#sign_2_saved').attr('value', 'false');
-	$('#sign_form_3').hide();
-	$('#sign_3_saved').attr('value', 'false');
-}
+// function refreshSignForm() {
+// 	$('#sign_form_1').hide();
+// 	$('#sign_1_saved').attr('value', 'false');
+// 	$('#sign_form_2').hide();
+// 	$('#sign_2_saved').attr('value', 'false');
+// 	$('#sign_form_3').hide();
+// 	$('#sign_3_saved').attr('value', 'false');
+// }
 
 function loadHandlers(order) {
 	$('[id^=sign_' + order + '_left_finger_]').click(function() {
@@ -75,33 +75,49 @@ function loadHandlers(order) {
 	refreshMovementSelections(order);
 }
 
-function showAddMovementButtonsUpto(id) {
-	for (var i = 1; i < 4; i += 1) {
-		if (i < id) {
-      $('#sign_form_' + i).show();
-      $('#sign_' + i + '_saved').attr('value', 'true');
-		} else {
-      $('#sign_form_' + i).hide();
-      $('#sign_' + i + '_saved').attr('value', 'false');
-		}
-	}
-  $('[id^=add_movement_]').hide();
-  $('#add_movement_' + id).show();
-}
+// function showAddMovementButtonsUpto(id) {
+// 	for (var i = 1; i < 4; i += 1) {
+// 		if (i < id) {
+//       $('#sign_form_' + i).show();
+//       $('#sign_' + i + '_saved').attr('value', 'true');
+// 		} else {
+//       $('#sign_form_' + i).hide();
+//       $('#sign_' + i + '_saved').attr('value', 'false');
+// 		}
+// 	}
+//   $('[id^=add_movement_]').hide();
+//   $('#add_movement_' + id).show();
+// }
 
 jQuery(document).ready(function() {
-	showAddMovementButtonsUpto(1);
+	// showAddMovementButtonsUpto(1);
 
-  $('[id^=add_movement_]').click(function() {
-		var tokens = this.id.split("_");
-    showAddMovementButtonsUpto(parseInt(tokens[2]) + 1);
-  })
+  // $('[id^=add_movement_]').click(function() {
+  // 		var tokens = this.id.split("_");
+  //   showAddMovementButtonsUpto(parseInt(tokens[2]) + 1);
+  // })
 
   loadHandlers(1);
   loadHandlers(2);
   loadHandlers(3);
 	refreshOrientationSelections();
-	refreshSignForm();
+	// refreshSignForm();
 
   $(".scrollable").scrollable();
+  $(".scrollable_page").scrollable({
+	  next: ".next_page",
+	  prev: ".prev_page"
+  });
+  $(".scrollable_movement").scrollable({
+	  next: ".next_selection",
+	  prev: ".prev_selection"
+  });
+  // $(".scrollable_finger_orientation").scrollable({
+  // 	  next: ".next_finger_orientation",
+  // 	  prev: ".prev_finger_orientation"
+  // });
+  $(".scrollable_position_movement").scrollable({
+	  next: ".next_position_movement",
+	  prev: ".prev_position_movement"
+  });
 });

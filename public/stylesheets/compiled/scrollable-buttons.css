@@ -1,0 +1,93 @@
+/* this makes it possible to add next button beside scrollable */
+/* line 2, ../../../app/stylesheets/scrollable-buttons.scss */
+.scrollable {
+  float: left;
+}
+
+/* prev, next, prevPage and nextPage buttons */
+/* line 7, ../../../app/stylesheets/scrollable-buttons.scss */
+a.browse {
+  background: url(../../images/hori_large.png) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 40px 10px;
+  cursor: pointer;
+  font-size: 1px;
+}
+
+/* right */
+/* line 19, ../../../app/stylesheets/scrollable-buttons.scss */
+a.right {
+  background-position: 0 -30px;
+  clear: right;
+  margin-right: 0px;
+}
+
+/* line 20, ../../../app/stylesheets/scrollable-buttons.scss */
+a.right:hover {
+  background-position: -30px -30px;
+}
+
+/* line 21, ../../../app/stylesheets/scrollable-buttons.scss */
+a.right:active {
+  background-position: -60px -30px;
+}
+
+/* left */
+/* line 25, ../../../app/stylesheets/scrollable-buttons.scss */
+a.left {
+  margin-left: 0px;
+}
+
+/* line 26, ../../../app/stylesheets/scrollable-buttons.scss */
+a.left:hover {
+  background-position: -30px 0;
+}
+
+/* line 27, ../../../app/stylesheets/scrollable-buttons.scss */
+a.left:active {
+  background-position: -60px 0;
+}
+
+/* up and down */
+/* line 30, ../../../app/stylesheets/scrollable-buttons.scss */
+a.up, a.down {
+  background: url(../../images/vert_large.png) no-repeat;
+  float: none;
+  margin: 10px 50px;
+}
+
+/* up */
+/* line 37, ../../../app/stylesheets/scrollable-buttons.scss */
+a.up:hover {
+  background-position: -30px 0;
+}
+
+/* line 38, ../../../app/stylesheets/scrollable-buttons.scss */
+a.up:active {
+  background-position: -60px 0;
+}
+
+/* down */
+/* line 41, ../../../app/stylesheets/scrollable-buttons.scss */
+a.down {
+  background-position: 0 -30px;
+}
+
+/* line 42, ../../../app/stylesheets/scrollable-buttons.scss */
+a.down:hover {
+  background-position: -30px -30px;
+}
+
+/* line 43, ../../../app/stylesheets/scrollable-buttons.scss */
+a.down:active {
+  background-position: -60px -30px;
+}
+
+/* disabled navigational button */
+/* line 47, ../../../app/stylesheets/scrollable-buttons.scss */
+a.disabled {
+  visibility: hidden !important;
+}
