@@ -116,11 +116,6 @@ label {
 .handshape_class {
 }
 
-
-
-
-
-
 .items div {
 	float: left;
 }
@@ -159,7 +154,7 @@ label {
 .scrollable_page {
 	position:relative;
 	overflow:hidden;
-	width: 700px;
+	width: 780px;
 	height: 550px;
 }
 
@@ -175,8 +170,9 @@ label {
 }
 
 .scrollable_page .items #selection {
-	width: 100%;
+	width: 780px;
 	height: 500px;
+	background-image: url('/images/entry.png');
 }
 
 
@@ -184,7 +180,7 @@ label {
 .scrollable_movement {
 	position:relative;
 	overflow:hidden;
-	width: 700px;
+	width: 780px;
 	height: 550px;
 }
 
@@ -200,7 +196,7 @@ label {
 }
 
 .scrollable_movement .items #selection {
-	width: 700px;
+	width: 780px;
 	height: 200px;
 }
 
