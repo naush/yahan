@@ -198,11 +198,12 @@ label {
 
 /* line 174, ../../../app/stylesheets/screen.scss */
 .scrollable_page .items #selection {
-  width: 780px;
-  height: 500px;
+  width: 730px;
+  height: 450px;
+  pdding: 25px;
 }
 
-/* line 181, ../../../app/stylesheets/screen.scss */
+/* line 182, ../../../app/stylesheets/screen.scss */
 .scrollable_movement {
   position: relative;
   overflow: hidden;
@@ -210,26 +211,26 @@ label {
   height: 550px;
 }
 
-/* line 188, ../../../app/stylesheets/screen.scss */
+/* line 189, ../../../app/stylesheets/screen.scss */
 .scrollable_movement img {
   width: 100px;
   height: 100px;
 }
 
-/* line 193, ../../../app/stylesheets/screen.scss */
+/* line 194, ../../../app/stylesheets/screen.scss */
 .scrollable_movement .items {
   /* this cannot be too large */
   width: 20000em;
   position: absolute;
 }
 
-/* line 199, ../../../app/stylesheets/screen.scss */
+/* line 200, ../../../app/stylesheets/screen.scss */
 .scrollable_movement .items #selection {
   width: 780px;
   height: 200px;
 }
 
-/* line 206, ../../../app/stylesheets/screen.scss */
+/* line 207, ../../../app/stylesheets/screen.scss */
 .scrollable_position_movement {
   position: relative;
   overflow: hidden;
@@ -237,20 +238,20 @@ label {
   height: 120px;
 }
 
-/* line 213, ../../../app/stylesheets/screen.scss */
+/* line 214, ../../../app/stylesheets/screen.scss */
 .scrollable_position_movement img {
   width: 100px;
   height: 100px;
 }
 
-/* line 218, ../../../app/stylesheets/screen.scss */
+/* line 219, ../../../app/stylesheets/screen.scss */
 .scrollable_position_movement .items {
   /* this cannot be too large */
   width: 20000em;
   position: absolute;
 }
 
-/* line 224, ../../../app/stylesheets/screen.scss */
+/* line 225, ../../../app/stylesheets/screen.scss */
 .scrollable_position_movement .items #selection {
   width: 113.3333px;
   height: 133.3333px;
