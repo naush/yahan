@@ -179,20 +179,20 @@ label {
   overflow: hidden;
   width: 780px;
   height: 550px;
+  background-image: url("/images/entry.png");
 }
 
-/* line 161, ../../../app/stylesheets/screen.scss */
+/* line 162, ../../../app/stylesheets/screen.scss */
 .scrollable_page img {
   width: 150px;
   height: 150px;
 }
 
-/* line 166, ../../../app/stylesheets/screen.scss */
+/* line 167, ../../../app/stylesheets/screen.scss */
 .scrollable_page .items {
   /* this cannot be too large */
   width: 20000em;
   position: absolute;
-  background-image: url("/images/entry.png");
 }
 
 /* line 173, ../../../app/stylesheets/screen.scss */
