@@ -180,28 +180,29 @@ label {
   width: 780px;
   height: 550px;
   background-image: url("/images/entry.png");
+  background-repeat: no-repeat;
 }
 
-/* line 162, ../../../app/stylesheets/screen.scss */
+/* line 163, ../../../app/stylesheets/screen.scss */
 .scrollable_page img {
   width: 150px;
   height: 150px;
 }
 
-/* line 167, ../../../app/stylesheets/screen.scss */
+/* line 168, ../../../app/stylesheets/screen.scss */
 .scrollable_page .items {
   /* this cannot be too large */
   width: 20000em;
   position: absolute;
 }
 
-/* line 173, ../../../app/stylesheets/screen.scss */
+/* line 174, ../../../app/stylesheets/screen.scss */
 .scrollable_page .items #selection {
   width: 780px;
   height: 500px;
 }
 
-/* line 180, ../../../app/stylesheets/screen.scss */
+/* line 181, ../../../app/stylesheets/screen.scss */
 .scrollable_movement {
   position: relative;
   overflow: hidden;
@@ -209,26 +210,26 @@ label {
   height: 550px;
 }
 
-/* line 187, ../../../app/stylesheets/screen.scss */
+/* line 188, ../../../app/stylesheets/screen.scss */
 .scrollable_movement img {
   width: 100px;
   height: 100px;
 }
 
-/* line 192, ../../../app/stylesheets/screen.scss */
+/* line 193, ../../../app/stylesheets/screen.scss */
 .scrollable_movement .items {
   /* this cannot be too large */
   width: 20000em;
   position: absolute;
 }
 
-/* line 198, ../../../app/stylesheets/screen.scss */
+/* line 199, ../../../app/stylesheets/screen.scss */
 .scrollable_movement .items #selection {
   width: 780px;
   height: 200px;
 }
 
-/* line 205, ../../../app/stylesheets/screen.scss */
+/* line 206, ../../../app/stylesheets/screen.scss */
 .scrollable_position_movement {
   position: relative;
   overflow: hidden;
@@ -236,20 +237,20 @@ label {
   height: 120px;
 }
 
-/* line 212, ../../../app/stylesheets/screen.scss */
+/* line 213, ../../../app/stylesheets/screen.scss */
 .scrollable_position_movement img {
   width: 100px;
   height: 100px;
 }
 
-/* line 217, ../../../app/stylesheets/screen.scss */
+/* line 218, ../../../app/stylesheets/screen.scss */
 .scrollable_position_movement .items {
   /* this cannot be too large */
   width: 20000em;
   position: absolute;
 }
 
-/* line 223, ../../../app/stylesheets/screen.scss */
+/* line 224, ../../../app/stylesheets/screen.scss */
 .scrollable_position_movement .items #selection {
   width: 113.3333px;
   height: 133.3333px;
