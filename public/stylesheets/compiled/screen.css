@@ -192,13 +192,13 @@ label {
   /* this cannot be too large */
   width: 20000em;
   position: absolute;
+  background-image: url("/images/entry.png");
 }
 
-/* line 172, ../../../app/stylesheets/screen.scss */
+/* line 173, ../../../app/stylesheets/screen.scss */
 .scrollable_page .items #selection {
   width: 780px;
   height: 500px;
-  background-image: url("/images/entry.png");
 }
 
 /* line 180, ../../../app/stylesheets/screen.scss */
